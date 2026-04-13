@@ -87,14 +87,14 @@ The original `FOSSEE/workshop_booking` renders every page as a Django HTML templ
 
 | Feature | Original | This Submission |
 |---|---|---|
-| Workshop listing with filters | ✅ | ✅ |
-| Workshop detail page | ✅ | ✅ |
-| Booking form | ✅ | ✅ |
-| Booking confirmation code | ✅ | ✅ |
-| Booking lookup by code + email | ✅ | ✅ |
-| Django admin panel | ✅ | ✅ |
-| `Workshop`, `Booking`, `Category` models | ✅ | ✅ |
-| Auto-confirm vs waitlist logic | ✅ | ✅ |
+| Workshop listing with filters | yes | yes |
+| Workshop detail page | yes | yes |
+| Booking form | yes | yes |
+| Booking confirmation code | yes | yes |
+| Booking lookup by code + email | yes | yes |
+| Django admin panel | yes | yes |
+| `Workshop`, `Booking`, `Category` models | yes | yes |
+| Auto-confirm vs waitlist logic | yes | yes |
 
 ### What changed (and why)
 
@@ -295,7 +295,7 @@ Per-route document titles update dynamically:
 
 | Variable | Default | Required | Description |
 |---|---|---|---|
-| `SECRET_KEY` | — | ✅ | Django secret key — generate with `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` |
+| `SECRET_KEY` | — | yes | Django secret key — generate with `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` |
 | `DEBUG` | `False` | | Enable debug mode — never `True` in production |
 | `ALLOWED_HOSTS` | `localhost` | | Comma-separated — e.g. `localhost,127.0.0.1` |
 | `CORS_ALLOWED_ORIGINS` | `http://localhost:5173` | | Comma-separated origins for the React dev server |
